@@ -1,0 +1,95 @@
+package ba.yzl.LinkedListUtils;
+import java.util.List;
+
+public class LinkeddList<E> {
+	
+	private Node rootNode;
+	private int size;
+	
+	public LinkeddList() {
+		rootNode = new Node();
+		size = 0;
+	}
+	
+	
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	public int getSize() {
+		return size;
+	}
+	
+	public void add (E val) {
+		
+		Node newNode = new Node(val); // eski rootNode a pointer tutuyoruz .
+		
+		Node lastNode = new Node();
+		
+		while(rootNode.nextNode != null) {
+			rootNode = rootNode.nextNode;
+			lastNode = rootNode;// rootnode un pointer i null degil ise , rootNode u next node yap .
+		} lastNode.nextNode = newNode;
+		newNode.nextNode = null;
+		
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return (String) rootNode.getData();
+	}
+	
+	
+	public class Node<E> {
+		public E data;
+		public Node nextNode;
+		
+		private Node () { //empty constructor
+			
+		}
+		
+		private Node(E data) {
+			this.data = data;
+		}
+		
+		private Node(E data, Node nextNode) {
+			
+			this.data = data;
+			this.nextNode = nextNode;
+		}
+		
+		public void setData(E data) {
+			this.data = data;
+		}
+		
+		public E getData() {
+			return data;
+		}
+		
+		public void setNextNode(Node nextNode) {
+			this.nextNode = nextNode;
+		}
+		
+		public Node getNextNode() {
+			return nextNode;
+		}
+		
+	
+	}
+	
+
+	
+
+
+
+
+public static void main(String[] args) {
+	
+	LinkeddList<Integer> myList = new LinkeddList();
+	
+	myList.add(5);
+	
+	
+	System.out.println(myList.toString());
+} }

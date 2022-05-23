@@ -1,0 +1,20 @@
+package ba.yzl.main;
+
+import ba.yzl.Exception.MyCustomException;
+
+public class DriverExceptionMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			throw new MyCustomException("custom exception message");	
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println(e.getLocalizedMessage());
+		} 
+		
+
+	}
+
+}

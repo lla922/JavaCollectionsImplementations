@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="beg.java.collections.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="beg.java.collections.ListUtils.ListUtils"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="beg.java.collections.StackExercise.Brackets.BracketExpressionIterator"/>
+    <fullyQualifiedTypeName name="ba.yzl.model.Person"/>
+    <fullyQualifiedTypeName name="ba.yzl.lib.PersonUtils"/>
+    <fullyQualifiedTypeName name="ba.yzl.model.Circle"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="ba.yzl.Exception.NegativeRadiusException"/>
+    <fullyQualifiedTypeName name="ba.yzl.lib.CircleConsole"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.StringWriter"/>
+    <fullyQualifiedTypeName name="ba.yzl.Exception.LogException"/>
+    <fullyQualifiedTypeName name="java.lang.StackTraceElement"/>
+    <fullyQualifiedTypeName name="ba.yzl.Exception.MyCustomException"/>
+    <fullyQualifiedTypeName name="ba.yzl.lib.libUtils"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="ba.yzl.Exception.MyownException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="StackUtils.Stackk"/>
+</qualifiedTypeNameHistroy>

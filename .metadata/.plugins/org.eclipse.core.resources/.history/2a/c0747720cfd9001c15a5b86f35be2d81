@@ -1,0 +1,39 @@
+package ba.yzl.LinkedListUtils;
+
+import ba.yzl.LinkedListUtils.LinkeddList.Node;
+
+public class deneme {
+
+	public static void main(String[] args) {
+		
+		
+		int x = 1 ;
+		
+		while(x != 5) {
+			System.out.println(x);
+			x++;
+		}
+		
+		LinkedList
+
+	}
+
+}
+
+
+//public void add (E val) {
+//	
+//	Node newNode = new Node(val,null); 
+//	//Node currentNode = rootNode;
+//	
+//	if(rootNode == null) {
+//		rootNode = newNode;
+//	} else {
+//	Node currentNode = rootNode;
+//	 while (currentNode.nextNode != null) {
+//		currentNode = currentNode.nextNode;
+//		
+//	} currentNode.setNextNode(newNode);
+//		}
+//	
+//}

@@ -1,0 +1,27 @@
+package Driver;
+
+import StackUtils.Stackk;
+
+public class DriverStack {
+
+	public static void main(String[] args) {
+		
+		Stackk stack = new Stackk();
+		
+		stack.push(15);
+		stack.push(78);
+		stack.push(34);
+		
+		System.out.println(stack.pop());
+		
+		stack.pop();
+		
+		System.out.println();
+		
+		System.out.println(stack.toString());
+		
+		System.out.println(stack.getSize());
+
+	}
+
+}

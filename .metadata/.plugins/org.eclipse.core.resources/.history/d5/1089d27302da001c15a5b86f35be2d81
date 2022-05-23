@@ -1,0 +1,58 @@
+package StackUtils;
+
+public class Stackk<E> {
+	
+	Object[] elements;	
+	//This is stack implementation using arrays
+	
+	public Stackk() {
+		//creates an empty stack with initial size of 10
+		
+		elements = new Object[10];	
+	}
+	
+	public E push(E item) {														 //pushes an item on top of stack and returns the pushed item
+		if(elements == null) {
+			elements = new Object[10];
+			elements[0] = item;
+				} 
+		
+			else { 																//null degilse array , elemanlarin hepsini saga 1 kaydirip basa ekliycem .
+				Object[] arrWithNewElement = newSizeArrayCreationAndCopy();
+				arrWithNewElement[0] = item;
+				elements = arrWithNewElement;
+		} 		return item;
+		
+	}
+	
+	public Object[] newSizeArrayCreationAndCopy() {
+		
+		Object[] newArray = new Object[elements.length+1];
+		
+		for(int i=0,j=1; i< elements.length && j<newArray.length; i++,j++) {
+			newArray[j] = elements[i];
+			
+		}
+		
+		return newArray;
+	}
+	
+	public E pop() { //removes the object on top of this stack and returns the removed object
+		
+	}
+	
+	public E peek() { // returns the item on top of the stack
+		
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder str = new StringBuilder();
+		
+		for(int i = 0; i< elements.length; i++) {
+			str.append(elements[i]).append("/n");
+		} return str.toString();
+	}
+	
+
+}

@@ -1,0 +1,99 @@
+package ba.yzl.LinkedListUtils;
+import java.util.List;
+
+public class LinkeddList<E> {
+	
+	 public String toString(){
+	        String retStr = "Contents:\n";
+
+	        Node current = rootNode;
+	        while(current != null){
+	            retStr += current.getData() + "\n";
+	            current = current.getNextNode();}
+
+	        }
+	
+	private Node rootNode;
+	private int size;
+	
+	public LinkeddList() {
+		rootNode = new Node();
+		size = 0;
+	}
+	
+	
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	public int getSize() {
+		return size;
+	}
+	
+	public void add (E val) {
+		
+		Node newNode = new Node(val,null); // eski rootNode a pointer tutuyoruz .
+		
+		if(rootNode.getNextNode() == null) { // bu rootNode son elemandir anlamina gelir , o zaman nextNode unu direk newNode a set edebiliriz
+			rootNode.setNextNode(newNode);
+		} while (rootNode.getNextNode() != null) { // listenin sonunda degiliz sonuna gitmemiz lazim
+			rootNode = rootNode.getNextNode();
+		} 
+		
+	}
+	
+
+	
+	
+	private class Node<E> {
+		private E data;
+		private Node nextNode;
+		
+		private Node () { //empty constructor
+			
+		}
+		
+		private Node(E data) {
+			this.data = data;
+		}
+		
+		private Node(E data, Node nextNode) {
+			
+			this.data = data;
+			this.nextNode = nextNode;
+		}
+		
+		public void setData(E data) {
+			this.data = data;
+		}
+		
+		public E getData() {
+			return data;
+		}
+		
+		public void setNextNode(Node nextNode) {
+			this.nextNode = nextNode;
+		}
+		
+		public Node getNextNode() {
+			return nextNode;
+		}
+		
+	
+	}
+	
+
+	
+
+
+
+
+public static void main(String[] args) {
+	
+	LinkeddList<Integer> myList = new LinkeddList();
+	
+	myList.add(5);
+	
+	
+	System.out.println(myList.toString());
+} }

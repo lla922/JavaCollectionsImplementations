@@ -1,0 +1,24 @@
+package ba.yzl.main;
+
+import java.util.Scanner;
+
+import ba.yzl.model.Circle;
+
+public class DriverRadius {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Circle circle = new Circle();
+		
+		System.out.println(circle);
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(" pls enter radius values : ");
+		int radius = scanner.nextInt();		
+		
+		System.out.println(new Circle(radius));
+
+	}
+
+}

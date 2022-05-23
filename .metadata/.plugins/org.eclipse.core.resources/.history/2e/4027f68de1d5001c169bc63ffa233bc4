@@ -1,0 +1,14 @@
+package ba.yzl.main;
+
+import ba.yzl.model.Person;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Person person = null; 
+		
+		person.getName();
+
+	}
+
+}

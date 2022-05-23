@@ -1,0 +1,5 @@
+package ba.yzl.main;
+
+public class DriverRethrowException {
+
+}

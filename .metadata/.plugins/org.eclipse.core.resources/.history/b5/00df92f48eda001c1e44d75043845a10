@@ -1,0 +1,62 @@
+package beg.java.collections.ListUtils;
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+
+
+public class ListUtils {
+	
+	
+	
+	public ListUtils() {
+		
+	}
+	
+//	public static List<Integer> generateList (int a){
+//		
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		List<Integer> numbers = new ArrayList<Integer>();
+//		for(int i = 0; i < a; i++) {
+//			int b = scanner.nextInt();
+//			numbers.add(b);
+//			} return numbers;
+//		}
+	
+public static List<String> generateList (){
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		List<String> stringList = new ArrayList<String>();
+		
+			String myString = scanner.nextLine();
+			stringList.add(myString);
+			return stringList;
+		}
+	
+	
+	public static List<?> removeDuplicates(List<?> list){
+		
+		for(int i = 0; i < list.size() -1; i ++) {
+			
+			Object a = list.get(i);
+			
+			for(int x = 1; x < list.size() -1; x++) {
+				
+				Object b = list.get(x);
+				
+				if(a.equals(b)) {
+					list.remove(x);
+				}
+				
+			}
+		}
+		
+		
+		return list;
+	}
+	
+	
+
+}
