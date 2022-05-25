@@ -6,8 +6,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="beg.java.collections.ListUtils.ListUtils"/>
-    <fullyQualifiedTypeName name="java.util.Stack"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="beg.java.collections.StackExercise.Brackets.BracketExpressionIterator"/>
     <fullyQualifiedTypeName name="ba.yzl.model.Person"/>
     <fullyQualifiedTypeName name="ba.yzl.lib.PersonUtils"/>
@@ -30,4 +28,8 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="StackUtils.Stackk"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="Model.Brackets"/>
+    <fullyQualifiedTypeName name="Model.Brackets.BracketsIterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

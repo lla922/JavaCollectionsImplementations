@@ -1,5 +1,0 @@
-package ba.yzl.Exception;
-
-public class MyCustomException {
-
-}
